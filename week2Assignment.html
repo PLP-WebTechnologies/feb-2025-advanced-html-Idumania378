@@ -1,1 +1,129 @@
-front
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List with Roman Numerals</h2>
+    <ol type="I">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Beautiful Scenery</h2>
+    <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg" alt="Scenic View" width="600">
+
+    <!-- Table of Contacts -->
+    <h2>Contact List</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Kevin Otieno</td>
+            <td>123 Moi Avenue, Nairobi</td>
+            <td>+254712345678</td>
+            <td>kevinotieno@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Faith Mwangi</td>
+            <td>456 Uhuru Street, Mombasa</td>
+            <td>+254798765432</td>
+            <td>faithmwangi@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Samuel Kiptoo</td>
+            <td>789 Eldoret Road, Eldoret</td>
+            <td>+254723456789</td>
+            <td>samuelkiptoo@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Aisha Abdi</td>
+            <td>101 Kenyatta Avenue, Kisumu</td>
+            <td>+254734567890</td>
+            <td>aishaabdi@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Daniel Wanyama</td>
+            <td>202 Nyeri Lane, Nyeri</td>
+            <td>+254745678901</td>
+            <td>danielwanyama@gmail.com</td>
+        </tr>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        <br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+        <br><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <!-- Dropdown -->
+        <label for="country">Select Your Country:</label>
+        <select id="country" name="country" required>
+            <option value="">-- Select --</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Uganda">Uganda</option>
+            <option value="Tanzania">Tanzania</option>
+        </select>
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <br><br>
+
+        <!-- Checkboxes -->
+        <label>Interests:</label><br>
+        <input type="checkbox" id="coding" name="interests" value="coding">
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
+
